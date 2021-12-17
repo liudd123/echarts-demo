@@ -21,7 +21,7 @@ export default {
 
   mounted() {
     var svg = d3
-      .select("div")
+      .select("#asd")
       .append("svg")
       .attr("width", 700)
       .attr("height", 300);
