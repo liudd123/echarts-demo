@@ -3,6 +3,7 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/pie">3D饼状图</router-link>
+      <router-link to="/pied">3D饼状图</router-link>
     </div>
     <router-view/>
   </div>

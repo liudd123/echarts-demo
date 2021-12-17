@@ -20,7 +20,11 @@ const routes = [
   // }
   {
     path:'/pie',
-    component:()=>import('../views/charts/charts-pie.vue')
+    component:()=>import('../views/highcharts/charts-pie.vue')
+  },
+  {
+    path:'/pied',
+    component:()=>import('../views/donut3d/pie.vue')
   }
 ]
 
