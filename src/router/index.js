@@ -29,6 +29,10 @@ const routes = [
   {
     path:'/piedd',
     component:()=>import('../views/echarts/pie.vue')
+  },
+  {
+    path:"/bard",
+    component:()=>import("../views/echarts/bar3D.vue")
   }
 ]
 
