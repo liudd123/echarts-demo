@@ -9,6 +9,7 @@
           </template>
           <el-menu-item index="piedd">饼状图</el-menu-item>
           <el-menu-item index="bard">3D柱状图</el-menu-item>
+          <el-menu-item index="scatter3D">3D散点图</el-menu-item>
           
         </el-submenu>
          <el-submenu index="highcharts">

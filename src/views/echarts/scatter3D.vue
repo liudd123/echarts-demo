@@ -16,35 +16,25 @@ export default {
 
   methods: {
     init() {
-      this.$echarts.dispose(document.getElementById("main"));
-      let myChart = this.$echarts.init(document.getElementById("main"));
+      let dom = document.getElementById("main");
+      this.$echarts.dispose(dom);
+      let myChart = this.$echarts.init(dom);
       let option;
+      const symbolSize = 2.5;
       this.rq
         .get(
           "https://cdn.jsdelivr.net/gh/apache/echarts-website@asf-site/examples/data/asset/data/life-expectancy-table.json"
         )
         .then((data) => {
           option = {
-            grid3D: {},
             tooltip: {},
+            grid3D: {},
             xAxis3D: {
               type: "category",
             },
-            yAxis3D: {
-              type: "category",
-            },
-            zAxis3D: {
-              axisPointer: {
-                show: false,
-              },
-            },
-            //图示
-            visualMap: {
-              max: 1e8,
-              dimension: "Population",
-            },
+            yAxis3D: {},
+            zAxis3D: {},
             dataset: {
-              //数据别名
               dimensions: [
                 "Income",
                 "Life Expectancy",
@@ -56,19 +46,18 @@ export default {
             },
             series: [
               {
-                type: "bar3D",
-                // symbolSize: symbolSize,
-                shading: "lambert",
+                type: "scatter3D",
+                symbolSize: symbolSize,
                 encode: {
-                  x: "Year",
-                  y: "Country",
-                  z: "Life Expectancy",
+                  x: "Country",
+                  y: "Life Expectancy",
+                  z: "Income",
                   tooltip: [0, 1, 2, 3, 4],
                 },
               },
             ],
           };
-          option && myChart.setOption(option);
+          myChart.setOption(option);
         });
       option && myChart.setOption(option);
     },

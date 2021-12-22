@@ -33,6 +33,10 @@ const routes = [
   {
     path:"/bard",
     component:()=>import("../views/echarts/bar3D.vue")
+  },
+  {
+    path:'/scatter3D',
+    component:()=>import("../views/echarts/scatter3D.vue")
   }
 ]
 
