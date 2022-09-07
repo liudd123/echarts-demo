@@ -26,6 +26,14 @@
           </template>
           <el-menu-item index="pied">3D饼状图</el-menu-item>
         </el-submenu>
+         <el-submenu index="videoplayer">
+          <template slot="title">
+            <i class="el-icon-video-camera-solid"></i>
+            <span>视频播放</span>
+          </template>
+          <el-menu-item index="videoplayer">videoplayer</el-menu-item>
+          <el-menu-item index="video">video</el-menu-item>
+        </el-submenu>
       </el-menu>
       </el-aside>
     <el-main><router-view /></el-main>

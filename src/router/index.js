@@ -37,6 +37,14 @@ const routes = [
   {
     path:'/scatter3D',
     component:()=>import("../views/echarts/scatter3D.vue")
+  },
+  {
+    path:'/videoplayer',
+    component:()=>import("../views/videoplayer/videoplayer.vue")
+  },
+  {
+    path:'/video',
+    component:()=>import("../views/videoplayer/video.vue")
   }
 ]
 

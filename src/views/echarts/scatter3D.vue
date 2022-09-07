@@ -52,7 +52,7 @@ export default {
                   x: "Country",
                   y: "Life Expectancy",
                   z: "Income",
-                  tooltip: [0, 1, 2, 3, 4],
+                  tooltip: [],
                 },
               },
             ],
