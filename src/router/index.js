@@ -45,6 +45,18 @@ const routes = [
   {
     path:'/video',
     component:()=>import("../views/videoplayer/video.vue")
+  },
+  {
+    path:'/word',
+    component:()=>import("../views/vendors/word/index.vue")
+  },
+  {
+    path:'/pptx',
+    component:()=>import("../views/vendors/pptx/ppt.vue")
+  },
+  {
+    path:'/pdf',
+    component:()=>import("../views/vendors/pdf/PdfView.vue")
   }
 ]
 
