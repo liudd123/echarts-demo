@@ -14,6 +14,8 @@ import VideoPlayer from 'vue-video-player'
 import 'vue-video-player/src/custom-theme.css'
 import 'video.js/dist/video-js.css'
 import "videojs-contrib-hls"
+import VueViewer from 'v-viewer';
+import 'viewerjs/dist/viewer.css'
 
 import axios from 'axios'
 Vue.prototype.$axios = axios
@@ -22,6 +24,7 @@ Vue.config.productionTip = false
 
 Vue.use(VideoPlayer)
 highcharts3d(highcharts)
+Vue.use(VueViewer)
 Vue.prototype.$echarts=echarts;
 Vue.prototype.rq=request;
 new Vue({

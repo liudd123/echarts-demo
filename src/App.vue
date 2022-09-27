@@ -34,15 +34,7 @@
           <el-menu-item index="videoplayer">videoplayer</el-menu-item>
           <el-menu-item index="video">video</el-menu-item>
         </el-submenu>
-        <el-submenu index="vendors">
-          <template slot="title">
-            <i class="el-icon-document"></i>
-            <span>文档预览</span>
-          </template>
-          <el-menu-item index="word">Word</el-menu-item>
-          <el-menu-item index="pptx">pptx</el-menu-item>
-          <el-menu-item index="pdf">Pdf</el-menu-item>
-        </el-submenu>
+        <el-menu-item index="doc">文档预览</el-menu-item>
       </el-menu>
       </el-aside>
     <el-main><router-view /></el-main>
